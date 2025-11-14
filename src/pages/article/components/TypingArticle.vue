@@ -245,6 +245,7 @@ function nextSentence() {
 }
   
 function onTyping(e: KeyboardEvent) {
+  debugger
   if (!props.article.sections.length) return
   if (isTyping || isEnd) return;
   isTyping = true;
@@ -277,12 +278,16 @@ function onTyping(e: KeyboardEvent) {
       if (e.code === 'Space') {
         next()
       } else {
-        wrong = ' '
-        playBeep()
-        setTimeout(() => {
-          wrong = ''
-          wrong = input = ''
-        }, 500)
+        // 如果在第一个单词的最后一位上， 不按空格的直接输入下一个字母的话
+        next()
+        isTyping = false
+        onTyping(e)
+        // wrong = ' '
+        // playBeep()
+        // setTimeout(() => {
+        //   wrong = ''
+        //   wrong = input = ''
+        // }, 500)
       }
     } else {
       //如果是首句首词
