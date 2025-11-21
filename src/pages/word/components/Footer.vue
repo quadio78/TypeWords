@@ -239,7 +239,7 @@ const progress = $computed(() => {
     box-sizing: border-box;
     position: fixed;
     bottom: 1rem;
-    z-index: 9998; // 确保进度条也在最上方
+    z-index: 1; // 确保进度条也在最上方
   }
 
   .arrow {
