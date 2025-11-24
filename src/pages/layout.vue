@@ -25,7 +25,6 @@ function goHome() {
     <div class="aside space" :class="{'expand':settingStore.sideExpand}"></div>
     <div class="aside anim fixed" :class="{'expand':settingStore.sideExpand}">
       <div class="top">
-        <Logo v-if="settingStore.sideExpand"/>
         <div class="row" @click="goHome">
           <IconFluentHome20Regular/>
           <span v-if="settingStore.sideExpand">主页</span>
