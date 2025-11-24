@@ -606,14 +606,14 @@ function importOldData() {
         <div v-if="tabIndex === 4">
           <div>
             目前用户的所有数据
-            <b class="text-red">仅保存在本地</b>。如果您需要在不同的设备、浏览器或者其他非官方部署上使用 {{ APP_NAME }}，
-            您需要手动进行数据同步和保存。
+            <b class="text-red">仅保存在本地</b>。如果需要在不同的设备、浏览器或者其他非官方部署上使用，
+            需要手动进行数据同步和保存。
           </div>
           <BaseButton :loading="exportLoading" class="mt-3" @click="exportData()">导出数据</BaseButton>
 
           <div class="line my-3"></div>
 
-          <div>请注意，导入数据后将<b class="text-red"> 完全覆盖 </b>当前所有数据，请谨慎操作。
+          <div>导入数据后将<b class="text-red"> 完全覆盖 </b>当前所有数据，请谨慎操作。
           </div>
           <div class="flex gap-space mt-3">
             <div class="import hvr-grow">
@@ -631,14 +631,6 @@ function importOldData() {
         </div>
 
         <div v-if="tabIndex === 5">
-          <div class="log-item">
-            <div class="mb-2">
-              <div>
-                <div>日期：2025/11/28</div>
-                <div>内容：老哥生日快乐</div>
-              </div>
-            </div>
-          </div>
           <div class="log-item">
             <div class="mb-2">
               <div>
