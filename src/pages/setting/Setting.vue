@@ -650,7 +650,7 @@ function importOldData() {
         </div>
 
         <div v-if="tabIndex === 6" class="center flex-col">
-          <h1>Type Words</h1>
+          <h1>Tusita Words</h1>
 
           <!-- 用户信息部分 -->
           <div v-if="userStore.isLoggedIn && userStore.user" class="user-info-section mb-6">
